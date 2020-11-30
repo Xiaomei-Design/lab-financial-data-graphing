@@ -1,8 +1,3 @@
-const { response } = require("express");
-const router  = express.Router();
-const axios = require('axios');
-
-
 axios.get(`https://api.coindesk.com/v1/bpi/historical/close.json`)
     .then(response => {
      console.log(response.data);
